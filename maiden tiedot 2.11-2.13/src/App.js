@@ -15,7 +15,6 @@ class App extends React.Component {
       axios
         .get('https://restcountries.eu/rest/v2/all')
         .then(response => {
-          console.log(response.data)
           this.setState({ countries: response.data })
         })
     }
